@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RESTAURENT</title>
+         <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <!-- flatpicker -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="reservation.css">
+    </head>
+<body>
+    <a href="restaurent.html"><i class="fa-solid fa-circle-left" id="back"></i></a>
+    <div class="form" id="myForm">
+            <form action="" class="form-container">
+              <h1>Enter detail</h1>
+              <input type="text" placeholder="Enter Name" name="email" id="name" required>
+              <input type="text" placeholder="Enter the number of persons" name="psw" id="persons" required>
+              <input class="form-control" id="date" type="date" required>
+              <input class="form-control" id="time" type="time" required>
+          
+              <button type="button" class="btn btn-success" id="reserve" onclick="button()">submit</button>
+              <button type="button" class="btn btn-danger" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+
+
+
+
+            <table class="table table-striped table-dark" >
+        <thead>
+          <tr>
+            <th scope="col-sm-4">Name</th>
+            <th scope="col-sm-4">Persons</th>
+            <th scope="col-sm-4">Date</th>
+            <th scope="col-sm-4">Time</th>
+          </tr>
+        </thead>
+        <tbody id="table">
+          <!-- <tr>
+            <th ></th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th ></th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr> -->
+        </tbody>
+    </table>
+<script src="restaurent.js"></script>
+<!-- flatpicker -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>    
+</body>
+</html>
